@@ -20,7 +20,7 @@ struct dex example() {
 }
 
 int print(struct dex poke) {
-  printf("%d: ", poke.num);
+  printf("Dex#%d: ", poke.num);
   printf("%s\n", poke.pokemon);
   return 0;
 }
