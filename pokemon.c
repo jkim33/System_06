@@ -40,12 +40,22 @@ int main() {
   struct dex poke2;
   poke2 = example();
 
-  struct dex overrated;
-  overrated = example();
-  modify(&overrated, 6, "Charizard");
+  struct dex poke3;
+  poke3 = example();
   
+  printf("Example Structs:\n");
   print(poke1);
   print(poke2);
-  print(overrated);
+  print(poke3);
+
+  modify(&poke1, 3, "Venusaur");
+  modify(&poke2, 6, "Charizard");
+  modify(&poke3, 9, "Blastoise");
+  
+  printf("After Modifications:\n");
+  print(poke1);
+  print(poke2);
+  print(poke3);
+  
   return 0;
 }
